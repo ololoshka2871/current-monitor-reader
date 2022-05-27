@@ -1,0 +1,19 @@
+[package]
+name = "current-monitor-reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hidapi = "1.4"
+structopt = { version = "0.3", default-features = false }
+
+# structmap
+structmap = { git = "https://github.com/ex0dus-0x/structmap.git" }
+structmap-derive = "0.1.5"
+
+# serde
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = { version = "1.0" }
+ssmarshal = "1.0.0"
